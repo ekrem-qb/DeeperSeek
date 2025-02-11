@@ -76,7 +76,7 @@ chatbot = DeepSeek(
 2. Head over to `Application` > `Local Storage` > `https://chat.deepseek.com`.
 3. Scroll down till you find `userToken`, click on it, a preview will show up beneath it, right click on the line that contains `value` and click `Copy value`.
 
-![image](linkhere)
+![image](https://raw.githubusercontent.com/theAbdoSabbagh/DeeperSeek/refs/heads/main/docs/assets/guide.png)
 
 ## DeepSeek Methods
 
