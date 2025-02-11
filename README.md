@@ -42,6 +42,6 @@ You can find the changelog [here](https://github.com/theAbdoSabbagh/DeeperSeek/b
 
 This project is licensed under the GPLv3 License - see the [LICENSE](LICENSE) file for details.  
 
----
+## Star History
 
-Let me know if you want any further refinements! 😊
+[![Star History Chart](https://api.star-history.com/svg?repos=theAbdoSabbagh/DeeperSeek&type=Date)](https://star-history.com/#theAbdoSabbagh/DeeperSeek&Date)
