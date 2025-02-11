@@ -1,0 +1,32 @@
+from DeeperSeek import DeepSeek
+
+async def main():
+    # Initialize using email and password
+    api = DeepSeek(
+        email = "email@emai.com",
+        password = "password",
+        verbose = False
+    )
+    # Or you can use a session token instead
+    api = DeepSeek(
+        token = session_token,
+        headless = True
+    )
+
+    response = await api.send_message( # Send a message to DeepSeek
+        "Hello DeepSeek!",
+        slow_mode = True,
+        deepthink = False,
+        search = False,
+        slow_mode_delay = 0.25
+    )
+    print(response.text, response.chat_id) # Return type is a Response object
+
+    new_response = await api.regenerate_response() # Regenerate the last response
+    print(new_response.text, new_response.chat_id)
+
+    api.reset_chat() # Reset the chat
+    api.retrieve_token() # Retrieve the session token, useful for debugging
+    api.logout() # Log out of the current account
+
+    # More features coming soon!
