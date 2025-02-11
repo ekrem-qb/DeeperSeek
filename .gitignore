@@ -1,3 +1,10 @@
+# Custom
+main.py
+updatePackage.py
+tests
+auto_test.py
+algorithm.md
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
