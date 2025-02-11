@@ -1,0 +1,4 @@
+PyVirtualDisplay==3.0
+beautifulsoup4
+inscriptis
+zendriver
