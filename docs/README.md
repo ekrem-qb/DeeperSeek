@@ -45,7 +45,7 @@ Create an instance of `DeepSeek`:
 ```py
 from DeeperSeek import DeepSeek
 
-chatbot = DeepSeek(
+api = DeepSeek(
     email = "YOUR_EMAIL",
     password = "YOUR_PASSWORD",
     token = "YOUR_SESSION_TOKEN",
@@ -55,6 +55,8 @@ chatbot = DeepSeek(
     headless = False,
     attempt_cf_bypass = True,
 )
+
+await api.initialize() # Necessary to initialize the class, must be called before using other methods
 ```
 
 # Parameters

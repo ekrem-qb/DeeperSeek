@@ -12,6 +12,8 @@ async def main():
         token = session_token,
         headless = True
     )
+    
+    await api.initialize() # Important
 
     response = await api.send_message( # Send a message to DeepSeek
         "Hello DeepSeek!",
