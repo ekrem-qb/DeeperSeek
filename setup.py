@@ -21,7 +21,7 @@ setup(
         "Issue tracker": "https://github.com/theAbdoSabbagh/UnlimitedGPT/issues",
         "Changelog": "https://github.com/theAbdoSabbagh/UnlimitedGPT/blob/main/CHANGELOG.md",
     },
-    version="0.1.2",
+    version="0.1.3",
     packages=["DeeperSeek", "DeeperSeek/internal"],
     # py_modules=["DeeperSeek"],
     license="GPL-3.0 license",
