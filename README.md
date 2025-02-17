@@ -1,7 +1,5 @@
 # DeeperSeek  
-[![Downloads](https://static.pepy.tech/badge/deeperseek)](https://pepy.tech/project/deeperseek)  
-[![PyPi](https://img.shields.io/pypi/v/DeeperSeek.svg)](https://pypi.python.org/pypi/DeeperSeek)  
-[![License](https://img.shields.io/github/license/theAbdoSabbagh/DeeperSeek.svg?color=green)](https://github.com/theAbdoSabbagh/DeeperSeek/blob/main/LICENSE)  
+[![Downloads](https://static.pepy.tech/badge/deeperseek)](https://pepy.tech/project/deeperseek) [![PyPi](https://img.shields.io/pypi/v/DeeperSeek.svg)](https://pypi.python.org/pypi/DeeperSeek) [![License](https://img.shields.io/github/license/theAbdoSabbagh/DeeperSeek.svg?color=green)](https://github.com/theAbdoSabbagh/DeeperSeek/blob/main/LICENSE)  
 
 DeeperSeek is a Python library for using the DeepSeek website as an alternative API to the DeepSeek paid API.
 
