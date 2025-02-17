@@ -1,6 +1,6 @@
 import os
 
-from setuptools import find_packages, setup
+from setuptools import setup
 
 base_path = os.path.abspath(os.path.dirname(__file__))
 
@@ -17,11 +17,11 @@ setup(
     author="Sxvxge",
     url="https://github.com/theAbdoSabbagh/DeeperSeek",
     project_urls={
-        "Documentation": "https://github.com/theAbdoSabbagh/UnlimitedGPT/blob/main/README.md",
-        "Issue tracker": "https://github.com/theAbdoSabbagh/UnlimitedGPT/issues",
-        "Changelog": "https://github.com/theAbdoSabbagh/UnlimitedGPT/blob/main/CHANGELOG.md",
+        "Documentation": "https://github.com/theAbdoSabbagh/DeeperSeek/blob/main/README.md",
+        "Issue tracker": "https://github.com/theAbdoSabbagh/DeeperSeek/issues",
+        "Changelog": "https://github.com/theAbdoSabbagh/DeeperSeek/blob/main/CHANGELOG.md",
     },
-    version="0.1.3",
+    version="0.1.4",
     packages=["DeeperSeek", "DeeperSeek/internal"],
     # py_modules=["DeeperSeek"],
     license="GPL-3.0 license",
@@ -42,6 +42,7 @@ setup(
         "Programming Language :: Python :: 3.10",
         "Programming Language :: Python :: 3.11",
         "Programming Language :: Python :: 3.12",
+        "Programming Language :: Python :: 3.13",
         "Topic :: Internet",
         "Topic :: Software Development :: Libraries",
         "Topic :: Software Development :: Libraries :: Python Modules",
