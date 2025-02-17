@@ -30,10 +30,6 @@ DeeperSeek works on Windows, Linux, and macOS. It also supports Google Colab and
 
 You can find the documentation [here](https://github.com/theAbdoSabbagh/DeeperSeek/blob/main/docs/README.md).  
 
-## Changelog  
-
-You can find the changelog [here](https://github.com/theAbdoSabbagh/DeeperSeek/blob/main/CHANGELOG.md).  
-
 ## Disclaimer  
 
 - This project is not affiliated with DeepSeek in any way. Use at your own risk. I am not responsible for any damage caused by this project.  
