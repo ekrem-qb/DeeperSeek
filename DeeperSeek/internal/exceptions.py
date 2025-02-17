@@ -2,7 +2,7 @@ class DeeperSeekException(BaseException):
     pass
 
 
-class InvalidConversationID(DeeperSeekException):
+class InvalidChatID(DeeperSeekException):
     pass
 
 
@@ -15,4 +15,16 @@ class InvalidCredentials(DeeperSeekException):
 
 
 class ServerDown(DeeperSeekException):
+    pass
+
+
+class MissingInitialization(DeeperSeekException):
+    pass
+
+
+class CouldNotFindElement(DeeperSeekException):
+    pass
+
+
+class InvalidChatID(DeeperSeekException):
     pass
