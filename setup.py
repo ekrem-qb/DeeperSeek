@@ -19,7 +19,6 @@ setup(
     project_urls={
         "Documentation": "https://github.com/theAbdoSabbagh/DeeperSeek/blob/main/README.md",
         "Issue tracker": "https://github.com/theAbdoSabbagh/DeeperSeek/issues",
-        "Changelog": "https://github.com/theAbdoSabbagh/DeeperSeek/blob/main/CHANGELOG.md",
     },
     version="0.1.4",
     packages=["DeeperSeek", "DeeperSeek/internal"],
