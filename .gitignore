@@ -176,3 +176,9 @@ cython_debug/
 
 # PyPI configuration file
 .pypirc
+
+.vscode/
+docs/
+LICENSE
+README.md
+setup.py
