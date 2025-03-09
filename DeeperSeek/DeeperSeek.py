@@ -370,22 +370,23 @@ class DeepSeek:
             for char in message:
                 await textbox.send_keys(char)
                 await sleep(slow_mode_delay)
+
+            # Find the parent div of both deepthink and search options
+            send_options_parent = await self.browser.main_tab.select(self.selectors.interactions.send_options_parent)
+
+            if deepthink != self._deepthink_enabled:
+                await send_options_parent.children[0].click() # DeepThink (R1)
+                self._deepthink_enabled = deepthink
+
+            if search != self._search_enabled:
+                await send_options_parent.children[1].click() # Search
+                self._search_enabled = search
+
+            send_button = await self.browser.main_tab.select(self.selectors.interactions.send_button)
+            await send_button.click()
         else:
-            await textbox.send_keys(message)
-
-        # Find the parent div of both deepthink and search options
-        send_options_parent = await self.browser.main_tab.select(self.selectors.interactions.send_options_parent)
-        
-        if deepthink != self._deepthink_enabled:
-            await send_options_parent.children[0].click() # DeepThink (R1)
-            self._deepthink_enabled = deepthink
-        
-        if search != self._search_enabled:
-            await send_options_parent.children[1].click() # Search
-            self._search_enabled = search
-
-        send_button = await self.browser.main_tab.select(self.selectors.interactions.send_button)
-        await send_button.click()
+            message = message.replace('\n', '\\n').replace('\'', "\\'")
+            await textbox.parent.parent.parent.parent.apply(f"(e) => {{for(p in e) if (p.startsWith('__reactFiber$')) {{e[p].return.pendingProps.onSubmit('{message}',{{thinkingEnabled:{'true' if deepthink else 'false'},searchEnabled:{'true' if search else 'false'} }});break;}}}}")
 
         return await self._get_response(timeout = timeout)
 
